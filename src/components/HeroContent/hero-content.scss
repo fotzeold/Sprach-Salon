@@ -1,0 +1,72 @@
+.hero__content{
+	position: absolute;
+	bottom: 20px;
+	max-width: 1170px;
+	width: 100%;
+	.row{
+		align-items: center;
+	}
+	.hero__card{
+		background: linear-gradient( rgba(14, 18, 11, 0.7), rgba(0, 0, 0, 0.7) );
+		padding: 30px 70px;
+		border-radius: 10px;
+	}
+	.hero__card-text{
+		padding-left: 30px;
+	}
+	.hero__card-more{
+		color: #EBA801;
+		font-size: 13px;
+		margin-top: 10px;
+	}
+}
+
+@media all and (max-width: 1200px) {
+		.hero__content{
+			max-width: 960px;
+			.hero__card{
+				padding: 20px 20px;
+			}
+			.hero__card-text{
+				padding-left: 10px;
+			}
+		}
+}
+
+@media all and (max-width: 990px) {
+		.hero__content{
+			max-width: 720px;
+			.hero__card{
+				padding: 20px 20px;
+			}
+			.hero__card-text{
+				padding-left: 10px;
+			}
+		}
+}
+
+@media all and (max-width: 760px) {
+	.hero__content{
+		padding: 25px 0;
+		position: static;
+		max-width: 100%;
+		.row{
+			flex-direction: column;
+		}
+
+		.hero__card{
+			max-width: 400px;
+			width: 100%;
+			margin: 10px 0;
+			padding-left: 40px;
+			.row{
+				flex-direction: row;
+				justify-content: start;
+				margin: 0 auto;
+			}
+			.hero__card-text{
+				margin-left: 20px;
+			}
+		}
+	}
+}
