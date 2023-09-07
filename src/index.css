@@ -40,6 +40,10 @@ a:active, a, a:focus{
 	justify-content: space-between;
 }
 
+.grid{
+	display: grid;
+}
+
 @media all and (max-width: 1366px) {
 	.body-when-open-modal{
 		overflow: hidden;

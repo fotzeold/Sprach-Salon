@@ -1,0 +1,51 @@
+.contact-us{
+	padding: 100px 0;
+	.contact-us__main{
+		h2{
+			font-size: 46px;
+		}
+		p{
+			font-size: 18px;
+			color: #526782;
+			margin-top: 30px;
+		}
+	}
+	.contact-us__form{
+		padding: 30px;
+		width: 500px;
+		border-radius: 10px;
+		background-color: rgba(185, 185, 186, 0.641);
+		margin: 0 auto;
+	}
+	.grid{
+		grid-template-columns: 1fr 1fr;
+		gap: 100px;
+	}
+}
+
+@media all and (max-width: 990px) {
+	.contact-us{
+		padding: 50px 0;
+		.contact-us__main{
+			h2{
+				font-size: 42px;
+				text-align: center;
+			}
+			p{
+				max-width: 530px;
+				margin: 30px auto 0 auto;
+			}
+		}
+		.grid{
+			grid-template-columns: 1fr;
+			gap: 90px;
+		}
+	}
+}
+
+
+@media all and (max-width: 760px) {
+	.contact-us .contact-us__form{
+		width: 100%;
+	}
+}
