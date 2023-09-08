@@ -4,5 +4,6 @@ import studying from "../assets/img/icon/studying.svg";
 import fastTime from "../assets/img/icon/fast-time.svg";
 import telegram from "../assets/img/icon/telegram.png";
 import viber from "../assets/img/icon/viber.png";
+import spinner from "../assets/img/icon/Spinner.png";
 
-export { logo, people, studying, fastTime, telegram, viber };
+export { logo, people, studying, fastTime, telegram, viber, spinner };

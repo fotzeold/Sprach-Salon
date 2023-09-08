@@ -6,6 +6,7 @@ import HeroContent from "../HeroContent/HeroContent";
 import ContactUs from "../ContactUs/ContactUs";
 import Facts from "../Facts/Facts";
 import GeneralContact from "../GeneralContact/GeneralContact";
+import Advantages from "../Advantages/Advantages";
 
 import "./app.scss";
 
@@ -21,6 +22,8 @@ function App() {
 				<ContactUs />
 				<Facts />
 				<GeneralContact background={"first"} />
+				<Advantages />
+				<GeneralContact background={"second"} />
 			</main>
 		</div>
 	);
