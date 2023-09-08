@@ -6,7 +6,7 @@ import { spinner } from "../../services/image";
 
 import "./advantages.scss";
 
-const Advantages = () => {
+const Advantages = ({ openModal }) => {
 	const [advs, setAdvs] = useState(null);
 
 	useEffect(() => {
@@ -36,7 +36,7 @@ const Advantages = () => {
 										<div className="advantages__item-main">
 											<h3>{title}</h3>
 											<p>{descr}</p>
-											<button>Записатись</button>
+											<button onClick={openModal}>Записатись</button>
 										</div>
 									</div>
 								)
