@@ -5,6 +5,7 @@ import Hero from "../Hero/Hero";
 import HeroContent from "../HeroContent/HeroContent";
 import ContactUs from "../ContactUs/ContactUs";
 import Facts from "../Facts/Facts";
+import GeneralContact from "../GeneralContact/GeneralContact";
 
 import "./app.scss";
 
@@ -14,10 +15,13 @@ function App() {
 	return (
 		<div className="App">
 			<Header></Header>
-			<Hero></Hero>
-			{isMobile && <div className="container"><HeroContent /></div>}
-			<ContactUs />
-			<Facts />
+			<main>
+				<Hero></Hero>
+				{isMobile && <div className="container"><HeroContent /></div>}
+				<ContactUs />
+				<Facts />
+				<GeneralContact background={"first"} />
+			</main>
 		</div>
 	);
 }
