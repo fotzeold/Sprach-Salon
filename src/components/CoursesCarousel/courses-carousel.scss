@@ -1,0 +1,73 @@
+.courses-carousel{
+	padding: 0 0 100px 0;
+	h2{
+		font-size: 38px;
+	}
+	.courses-carousel__main{
+		height: 260px;
+		margin: 50px 0;
+		// overflow: hidden;
+		.slick-list{
+			overflow: hidden;
+			padding-bottom: 20px;
+		}
+		.slick-dots{
+			bottom: -60px;
+		}
+		.slick-dots li{
+			margin: 0 8px;
+		}
+		.slick-dots li button:before {
+			font-size: 14px;
+			opacity: 0.15;
+		}
+		.slick-dots li.slick-active button:before{
+			opacity: .45;
+		}
+		.slick-arrow{
+			display: none!important;;
+		}
+		.carousel__card{
+			display: flex!important;
+			width: 250px!important;
+			border: 1px solid #EBA801;
+			box-shadow: 5px 5px 0px #EBA801;
+			height: 250px;
+			margin-right: 15px;
+			border-radius: 10px;
+			padding: 20px;
+			justify-content: space-between;
+			flex-direction: column;
+			a{
+				display: block;
+				width: 100%;
+				border:1px solid #0134EB;
+				text-align: center;
+				padding: 10px 0;
+				font-size: 16px;
+				border-radius: 10px;
+				color: black;
+				box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.395);
+			}
+		}
+	}
+}
+@media all and (max-width: 1200px) {
+	.courses-carousel{
+		h2{
+			padding: 0 15px 0 0;
+		}
+		.container{
+			padding: 0 0 0 15px;
+		}
+	}
+}
+
+@media all and (max-width: 760px) {
+	.courses-carousel{
+		padding: 0px 0 80px 0;
+		h2{
+			font-size: 32px;
+		}
+	}
+}

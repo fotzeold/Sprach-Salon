@@ -1,0 +1,145 @@
+footer{
+	.footer__main-link{
+		font-size: 20px;
+		margin-bottom: 20px;
+		color: white;
+	}
+	a{
+		display: block;
+		font-size: 14px;
+		margin-bottom: 20px;
+	}
+	padding: 50px 0 20px 0;
+	background-color: rgba(0, 0, 0, 0.89);
+	.footer__menu{
+		.footer__menu-contacts{
+			width: 220px;
+			.footer__main-link{
+				padding: 0;
+			}
+			img{
+				width: 26px;
+				position: absolute;
+				left: 0;
+			}
+			a{
+				position: relative;
+				padding-left: 35px;
+				margin-bottom: 20px;
+			}
+		}
+		.footer__menu-courses{
+
+			.menu-courses__main{
+				width: 360px;
+				grid-template-columns: 1.7fr 1fr;
+			}
+		}
+		.footer__menu-test{
+			text-align: right;
+			width: 220px;
+		}
+	}
+
+	.footer__hotlinks{
+		margin: 30px 0;
+		.footer__hotlinks-logo img{
+			margin-left: 0;
+		}
+		img{
+			height: 50px;
+			width: auto;
+			margin-left: 15px;
+		}
+	}
+
+	.footer__contracts{
+		span{
+			color: white;
+		}
+		.footer__contracts-docs{
+			grid-template-columns: 1fr 1fr;
+		}
+		img{
+			height: 20px;
+			margin-left: 25px;
+		}
+	}
+}
+
+
+
+@media all and (max-width: 990px) {
+	footer{
+		.footer__menu{
+			.row{
+				flex-direction: row-reverse;
+			}
+			.footer__menu-test{
+				display: none;
+			}
+		}
+	}
+}
+
+@media all and (max-width: 760px) {
+	footer{
+		padding-top: 30px;
+		.footer__menu{
+			.row{
+				display: block;
+			}
+			.footer__menu-test{
+				display: block;
+				text-align: left;
+			}
+			.footer__menu-contacts{
+				width: 100%;
+			}
+		}
+		.footer__hotlinks{
+			justify-content: flex-start;
+			margin-bottom: 0;
+			margin-top: 20px;
+		}
+		.footer__menu-courses{
+			margin: 35px 0 20px 0;
+		}
+		.footer__contracts{
+			.row{
+				display: block;
+			}
+			.grid{
+				grid-template-columns: 1fr;
+			}
+			.footer__contracts-school{
+				margin-bottom: 20px;
+			}
+			.footer__contracts-paymant img{
+				margin: 0 30px 0 0;
+			}
+		}
+	}
+}
+
+@media all and (max-width: 570px) {
+	footer{
+		.footer__main-link{
+			font-size: 22px;
+			margin-bottom: 20px;
+			color: white;
+		}
+		a{
+			display: block;
+			font-size: 18px;
+			margin-bottom: 20px;
+		}
+	}
+}
+
+@media all and (max-width: 424px) {
+	footer .footer__menu .footer__menu-courses .menu-courses__main {
+			grid-template-columns: 1fr;
+			width: 100%;
+	}
+}

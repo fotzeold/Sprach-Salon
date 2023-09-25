@@ -43,6 +43,14 @@ a:active, a, a:focus{
 .grid{
 	display: grid;
 }
+.btn{
+	font-size: 16px;
+	border-radius: 10px;
+	padding: 10px 0;
+	cursor: pointer;
+	background-color: #EBA801;
+	color: white;
+}
 
 @media all and (max-width: 1366px) {
 	.body-when-open-modal{

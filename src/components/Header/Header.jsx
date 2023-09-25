@@ -24,7 +24,7 @@ const Header = () => {
 							<li className="dropdown">
 								Форми навчання <i className="arrow-down"></i>
 								<div className="dropdown__content">
-									<a href="#">Дитячі заняття</a>
+									<a href="#">Заняття для початківців</a>
 									<a href="#">Індивідуальні уроки</a>
 									<a href="#">Групові заняття</a>
 									<a href="/online">Online заняття</a>

@@ -9,6 +9,8 @@ import ContactUs from "../ContactUs/ContactUs";
 import Facts from "../Facts/Facts";
 import GeneralContact from "../GeneralContact/GeneralContact";
 import Advantages from "../Advantages/Advantages";
+import CoursesCarousel from "../CoursesCarousel/CoursesCarousel";
+import Footer from "../Footer/Footer"
 import Modal from '../Modal/Modal';
 
 import "./app.scss";
@@ -38,7 +40,9 @@ function App() {
 				<Facts />
 				<GeneralContact background={"first"} />
 				<Advantages openModal={openModal} />
+				<CoursesCarousel />
 				<GeneralContact background={"second"} />
+				<Footer></Footer>
 				<Modal active={activeModal} closeModal={closeModal} />
 			</main>
 		</div>
