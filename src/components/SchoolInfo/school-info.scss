@@ -1,0 +1,31 @@
+.school-info{
+	padding: 60px 0;
+	.school-info__wrapper{
+		h2{
+			font-size: 32px;
+			text-align: center;
+			margin: 20px 0 50px 0;
+		}
+		ol{
+			padding: 0 35px;
+			font-size: 18px;
+		}
+		li{
+			margin: 10px 0;
+		}
+		span{
+			font-weight: 600;
+		}
+		p{
+			margin: 30px 0;
+			font-size: 18px;
+		}
+	}
+}
+
+
+@media all and (max-width: 570px) {
+	.school-info{
+		padding: 40px 0;
+	}
+}

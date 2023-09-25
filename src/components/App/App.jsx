@@ -10,6 +10,7 @@ import Facts from "../Facts/Facts";
 import GeneralContact from "../GeneralContact/GeneralContact";
 import Advantages from "../Advantages/Advantages";
 import CoursesCarousel from "../CoursesCarousel/CoursesCarousel";
+import SchoolInfo from "../SchoolInfo/SchoolInfo";
 import Footer from "../Footer/Footer"
 import Modal from '../Modal/Modal';
 
@@ -42,9 +43,10 @@ function App() {
 				<Advantages openModal={openModal} />
 				<CoursesCarousel />
 				<GeneralContact background={"second"} />
-				<Footer></Footer>
+				<SchoolInfo />
 				<Modal active={activeModal} closeModal={closeModal} />
 			</main>
+			<Footer></Footer>
 		</div>
 	);
 }
