@@ -1,0 +1,25 @@
+.missing{
+	background: linear-gradient( rgba(14, 18, 11, 0.45), rgba(0, 0, 0, 0.3) ), url("../../assets/img/not-found.jpg") 0 0/cover no-repeat;
+	height: 100vh;
+	.missing__content{
+		width: fit-content;
+		height: 200px;
+		margin: 0 auto;
+		padding-top: 30%;
+		color: white;
+	}
+
+	h2{
+		font-size: 32px;
+		line-height: 88px;
+	}
+	
+	p{
+		font-size: 22px;
+	}
+	
+	span {
+		color: #EBA801;
+		font-weight: 700;
+	}
+}

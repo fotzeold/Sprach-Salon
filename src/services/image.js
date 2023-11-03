@@ -10,6 +10,7 @@ import mail from "../assets/img/icon/конверт.png";
 import adress from "../assets/img/icon/image 27.png";
 import visa from "../assets/img/icon/visa.png";
 import masterCard from "../assets/img/icon/Mastercard.png";
+import notFound from "../assets/img/not-found.jpg";
 
 
-export { logo, people, studying, fastTime, telegram, viber, spinner, phone, mail, adress, visa, masterCard };
+export { logo, people, studying, fastTime, telegram, viber, spinner, phone, mail, adress, visa, masterCard, notFound };

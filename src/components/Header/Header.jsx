@@ -2,6 +2,7 @@ import './header.scss';
 
 import { useState } from 'react';
 import { logo } from "../../services/image";
+import { Link } from "react-router-dom";
 
 const Header = () => {
 
@@ -20,18 +21,18 @@ const Header = () => {
 					</a>
 					<nav className={activeBurger ? "active" : ""}>
 						<ul>
-							<li><a href="#">Головна</a></li>
+							<li><Link to="/">Головна</Link></li>
 							<li className="dropdown">
 								Форми навчання <i className="arrow-down"></i>
 								<div className="dropdown__content">
-									<a href="#">Заняття для початківців</a>
-									<a href="#">Індивідуальні уроки</a>
-									<a href="#">Групові заняття</a>
-									<a href="/online">Online заняття</a>
-									<a href="#">Інтенсивний курс</a>
-									<a href="#">Розмовний курс</a>
-									<a href="#">Підготовка до Zertifikat</a>
-									<a href="#">Підготовка до ЗНО</a>
+									<Link to="/courses/starter-course">Заняття для початківців</Link>
+									<Link to="/courses/individual-course">Індивідуальні уроки</Link>
+									<Link to="/courses/group-course">Групові заняття</Link>
+									<Link to="/courses/online-course">Online заняття</Link>
+									<Link to="/courses/intensive-course">Інтенсивний курс</Link>
+									<Link to="/courses/conversational-course">Розмовний курс</Link>
+									<Link to="/courses/zecertificate-course">Підготовка до Zertifikat</Link>
+									<Link to="/courses/zno-course">Підготовка до ЗНО</Link>
 								</div>
 							</li>
 							<li><a href="#">Контакти</a></li>

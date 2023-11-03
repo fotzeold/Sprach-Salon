@@ -4,4 +4,6 @@ const _URL = "https://api.jsonbin.io/v3/b";
 
 const _ADVS = "64fb3a31d972192679c0484a";
 
-export { _KEY, _URL, _ADVS };
+const _COURSES = "65421d0e0574da7622c07d7d";
+
+export { _KEY, _URL, _ADVS, _COURSES };

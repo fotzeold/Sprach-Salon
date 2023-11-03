@@ -1,53 +1,34 @@
-import { useState } from "react";
+import { Route, Routes, BrowserRouter } from "react-router-dom";
+import { useState, useEffect } from "react";
+import getData from "../../services/getData";
+import { _COURSES } from "../../services/apiKey";
 
-import { useMediaQuery } from "react-responsive";
 
 import Header from "../Header/Header";
-import Hero from "../Hero/Hero";
-import HeroContent from "../HeroContent/HeroContent";
-import ContactUs from "../ContactUs/ContactUs";
-import Facts from "../Facts/Facts";
-import GeneralContact from "../GeneralContact/GeneralContact";
-import Advantages from "../Advantages/Advantages";
-import CoursesCarousel from "../CoursesCarousel/CoursesCarousel";
-import SchoolInfo from "../SchoolInfo/SchoolInfo";
+import MainPage from "../MainPage/MainPage";
+import CoursesPage from "../CoursesPage/CoursesPage";
+import NotFound from "../NotFound/NotFound";
 import Footer from "../Footer/Footer"
-import Modal from '../Modal/Modal';
 
-import "./app.scss";
 
 function App() {
-	const isMobile = useMediaQuery({ maxWidth: 760 });
+	const [courseList, setCourseList] = useState([]);
 
-	const [activeModal, setActiveModal] = useState(false);
+	useEffect(() => {
+		getData(_COURSES).then(data => setCourseList(data.record.coursesList))
+	}, [])
 
-	const openModal = () => {
-		document.body.classList.add("body-when-open-modal");
-		setActiveModal(true);
-	}
-
-	const closeModal = () => {
-		document.body.classList.remove("body-when-open-modal");
-		setActiveModal(false);
-	}
 
 	return (
-		<div className="App">
+		<BrowserRouter>
 			<Header></Header>
-			<main>
-				<Hero openModal={openModal}></Hero>
-				{isMobile && <div className="container"><HeroContent /></div>}
-				<ContactUs />
-				<Facts />
-				<GeneralContact background={"first"} />
-				<Advantages openModal={openModal} />
-				<CoursesCarousel />
-				<GeneralContact background={"second"} />
-				<SchoolInfo />
-				<Modal active={activeModal} closeModal={closeModal} />
-			</main>
+			<Routes>
+				<Route path="/" element={<MainPage />} />
+				<Route path="/courses/:id" element={<CoursesPage courseList={courseList} />} />
+				<Route path="*" element={<NotFound />} />
+			</Routes>
 			<Footer></Footer>
-		</div>
+		</BrowserRouter>
 	);
 }
 
