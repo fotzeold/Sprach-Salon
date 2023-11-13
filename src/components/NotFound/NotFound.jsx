@@ -1,4 +1,3 @@
-import { notFound } from "../../services/image";
 import { Link } from "react-router-dom";
 
 import "./not-found.scss";

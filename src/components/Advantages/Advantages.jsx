@@ -11,8 +11,7 @@ const Advantages = ({ openModal }) => {
 
 	useEffect(() => {
 		getData(_ADVS)
-			.then(data => data.record.advs)
-			.then((data) => setAdvs(data))
+			.then(data => setAdvs(data))
 	}, []);
 
 	return (
@@ -25,11 +24,11 @@ const Advantages = ({ openModal }) => {
 					</div>
 					<div className="advantages__wrapper-content">
 						{advs ?
-							advs.map(({ id, title, img, descr }, index) => {
+							advs.map(({ _id, title, img, descr }, index) => {
 								const reverse = index % 2 ? "reverse" : null;
 
 								return (
-									<div className={"advantages__item row " + reverse} key={id}>
+									<div className={"advantages__item row " + reverse} key={_id}>
 										<div className="advantages__item-img">
 											<img src={img} alt={title} loading="lazy" />
 										</div>

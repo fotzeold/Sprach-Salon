@@ -1,9 +1,17 @@
-const _KEY = '$2b$10$UbWXVk3YqE2pTOW4M5i9PuQcV8.Ibz88AFG3Bt7Tq.sdmQpU//fzW';
+const _KEY = 'api';
 
-const _URL = "https://api.jsonbin.io/v3/b";
+const _URL = "http://localhost:8000";
 
-const _ADVS = "64fb3a31d972192679c0484a";
+const _ADVS = "advantages";
 
-const _COURSES = "65421d0e0574da7622c07d7d";
+const _COURSES = "courses";
 
-export { _KEY, _URL, _ADVS, _COURSES };
+const _TEST = "tests";
+
+const _TGTOKEN = "6799354612:AAHo990iAiEaKPoZvU1wS6J4REimMEyBacU";
+
+const _CHATID = "-1002126690065";
+
+const _TGURL = `https://api.telegram.org/bot${_TGTOKEN}/sendMessage`;
+
+export { _KEY, _URL, _ADVS, _COURSES, _TEST, _TGTOKEN, _CHATID, _TGURL };

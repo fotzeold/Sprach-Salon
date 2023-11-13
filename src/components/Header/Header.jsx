@@ -12,6 +12,10 @@ const Header = () => {
 		setActiveBurger(bool => !bool);
 	}
 
+	const setBurgerFalse = () => {
+		setActiveBurger(false);
+	}
+
 	return (
 		<header>
 			<div className="container">
@@ -21,22 +25,22 @@ const Header = () => {
 					</a>
 					<nav className={activeBurger ? "active" : ""}>
 						<ul>
-							<li><Link to="/">Головна</Link></li>
+							<li><Link to="/" onClick={setBurgerFalse}>Головна</Link></li>
 							<li className="dropdown">
 								Форми навчання <i className="arrow-down"></i>
 								<div className="dropdown__content">
-									<Link to="/courses/starter-course">Заняття для початківців</Link>
-									<Link to="/courses/individual-course">Індивідуальні уроки</Link>
-									<Link to="/courses/group-course">Групові заняття</Link>
-									<Link to="/courses/online-course">Online заняття</Link>
-									<Link to="/courses/intensive-course">Інтенсивний курс</Link>
-									<Link to="/courses/conversational-course">Розмовний курс</Link>
-									<Link to="/courses/zecertificate-course">Підготовка до Zertifikat</Link>
-									<Link to="/courses/zno-course">Підготовка до ЗНО</Link>
+									<Link to="/courses/starter-course" onClick={setBurgerFalse}>Заняття для початківців</Link>
+									<Link to="/courses/individual-course" onClick={setBurgerFalse}>Індивідуальні уроки</Link>
+									<Link to="/courses/group-course" onClick={setBurgerFalse}>Групові заняття</Link>
+									<Link to="/courses/online-course" onClick={setBurgerFalse}>Online заняття</Link>
+									<Link to="/courses/intensive-course" onClick={setBurgerFalse}>Інтенсивний курс</Link>
+									<Link to="/courses/conversational-course" onClick={setBurgerFalse}>Розмовний курс</Link>
+									<Link to="/courses/zecertificate-course" onClick={setBurgerFalse}>Підготовка до Zertifikat</Link>
+									<Link to="/courses/zno-course" onClick={setBurgerFalse}>Підготовка до ЗНО</Link>
 								</div>
 							</li>
-							<li><a href="#">Контакти</a></li>
-							<li><a href="#">Онлайн тест</a></li>
+							<li><a href="#" onClick={setBurgerFalse}>Контакти</a></li>
+							<li><Link to="/test" onClick={setBurgerFalse}>Онлайн тест</Link></li>
 						</ul>
 					</nav>
 					<div
