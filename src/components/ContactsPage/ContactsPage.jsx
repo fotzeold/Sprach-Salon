@@ -38,14 +38,14 @@ const ContactsPage = () => {
 								</a>
 							</div>
 						</div>
-						<div className="contacts__adress row">
+						<a target="blank" href={contactsData.address.link} className="contacts__adress row">
 							<div className="contacts__adress-descr">
 								<h2>{contactsData.address.city}</h2>
 								<h3>Школа Sprach Salon</h3>
 								<p>{contactsData.address.full}</p>
 							</div>
 							<img src={mapImg} alt="" />
-						</div>
+						</a>
 					</>
 				}
 			</div>

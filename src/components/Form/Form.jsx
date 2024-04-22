@@ -64,6 +64,7 @@ const Form = ({ trueAnswers }) => {
 					placeholder="Roman Popovych"
 					value={formData.inp_name || ""}
 					onChange={handleInputChange}
+					required
 				/>
 				<label htmlFor="inp_phone">Номер телефону</label>
 				<input
@@ -72,6 +73,7 @@ const Form = ({ trueAnswers }) => {
 					placeholder="0983488820"
 					value={formData.inp_phone || ""}
 					onChange={handleInputChange}
+					required
 				/>
 				<p>{messageAlert}</p>
 				<div className="row">

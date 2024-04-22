@@ -31,7 +31,7 @@ function App() {
 			<main>
 				<Routes>
 					<Route path="/" element={<MainPage openModal={openModal} />} />
-					<Route path="/courses/:id" element={<CoursesPage />} />
+					<Route path="/courses/:name" element={<CoursesPage />} />
 					<Route path="/contacts" element={<ContactsPage />} />
 					<Route path="/test" element={<TestPage openModal={openModal} setTrueAnswers={setTrueAnswers} />} />
 					<Route path="*" element={<NotFound />} />
