@@ -31,7 +31,7 @@ const Footer = () => {
 								<div className="menu-courses__main grid">
 									{dataCourse && dataCourse.map(el => {
 										return (
-											<Link to={`/courses/${el.name}`}>{el.title}</Link>
+											<Link key={el.name + "-footer"} to={`/courses/${el.name}`}>{el.title}</Link>
 										)
 									})}
 								</div>
