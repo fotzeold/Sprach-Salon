@@ -10,5 +10,9 @@ import mail from "../assets/img/icon/конверт.png";
 import adress from "../assets/img/icon/image 27.png";
 import visa from "../assets/img/icon/visa.png";
 import masterCard from "../assets/img/icon/Mastercard.png";
+import contactsPhone from "../assets/img/icon/contacts.svg"
+import contactsEmail from "../assets/img/icon/email.svg"
+import contactsGrafik from "../assets/img/icon/grafik.svg"
+import mapImg from "../assets/img/map.png"
 
-export { logo, people, studying, fastTime, telegram, viber, spinner, phone, mail, adress, visa, masterCard };
+export { logo, mapImg, people, studying, fastTime, telegram, viber, spinner, phone, mail, adress, visa, masterCard, contactsPhone, contactsEmail, contactsGrafik };

@@ -6,7 +6,6 @@
 	.courses-carousel__main{
 		height: 260px;
 		margin: 50px 0;
-		// overflow: hidden;
 		.slick-list{
 			overflow: hidden;
 			padding-bottom: 20px;
@@ -60,6 +59,15 @@
 			a:hover{
 				color: white;
 				background-color: #EBA801;
+			}
+			p{
+				width: 208.4px;
+				text-overflow: ellipsis;
+				height: 86px;
+				overflow: hidden;
+				display: -webkit-box;
+				-webkit-line-clamp: 4;
+				-webkit-box-orient: vertical;
 			}
 		}
 	}

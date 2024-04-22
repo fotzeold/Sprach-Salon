@@ -46,7 +46,7 @@ const CoursesCarousel = () => {
 									return (
 										<div className="carousel__card" key={el.name + "-carousel__card-" + i}>
 											<h3>{el.title}</h3>
-											<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum omnis similique pariatur ut officiis dolorem?</p>
+											<p>{el.descr}</p>
 											<Link to={`/courses/${el.name}`}>Детальніше</Link>
 										</div>
 									)

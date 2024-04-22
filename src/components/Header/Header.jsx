@@ -30,13 +30,15 @@ const Header = () => {
 							<li className="dropdown">
 								Форми навчання <i className="arrow-down"></i>
 								<div className="dropdown__content">
-									{
-										coursesData && coursesData.map((el, i) => {
-											return (
-												<Link key={el.name + "-link-" + i} to={`/courses/${el.name}`} onClick={setBurgerFalse}>{el.title}</Link>
-											)
-										})
-									}
+									<div className="dropdown__content-back">
+										{
+											coursesData && coursesData.map((el, i) => {
+												return (
+													<Link key={el.name + "-link-" + i} to={`/courses/${el.name}`} onClick={setBurgerFalse}>{el.title}</Link>
+												)
+											})
+										}
+									</div>
 								</div>
 							</li>
 							<li><Link to="/contacts" onClick={setBurgerFalse}>Контакти</Link></li>

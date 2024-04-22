@@ -5,13 +5,13 @@ import Modal from '../Modal/Modal';
 import Header from "../Header/Header";
 import MainPage from "../MainPage/MainPage";
 import CoursesPage from "../CoursesPage/CoursesPage";
+import ContactsPage from "../ContactsPage/ContactsPage";
 import TestPage from "../TestPage/TestPage";
 import NotFound from "../NotFound/NotFound";
 import Footer from "../Footer/Footer"
 
 
 function App() {
-	const [courseList, setCourseList] = useState([]);
 	const [activeModal, setActiveModal] = useState(false);
 	const [trueAnswers, setTrueAnswers] = useState(0);
 
@@ -25,14 +25,14 @@ function App() {
 		setActiveModal(false);
 	}
 
-
 	return (
 		<BrowserRouter>
 			<Header></Header>
 			<main>
 				<Routes>
 					<Route path="/" element={<MainPage openModal={openModal} />} />
-					<Route path="/courses/:id" element={<CoursesPage courseList={courseList} />} />
+					<Route path="/courses/:id" element={<CoursesPage />} />
+					<Route path="/contacts" element={<ContactsPage />} />
 					<Route path="/test" element={<TestPage openModal={openModal} setTrueAnswers={setTrueAnswers} />} />
 					<Route path="*" element={<NotFound />} />
 				</Routes>
