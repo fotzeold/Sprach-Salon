@@ -1,5 +1,8 @@
 import "./footer.scss";
 import { phone, mail, adress, logo, telegram, viber, visa, masterCard } from "../../services/image";
+import dataCourse from "../../data/courses.json"
+import dataContacts from "../../data/contacts.json"
+import { Link } from "react-router-dom";
 
 const Footer = () => {
 	return (
@@ -9,16 +12,16 @@ const Footer = () => {
 					<div className="footer__menu">
 						<div className="row">
 							<div className="footer__menu-contacts">
-								<a href="#" className="footer__main-link">КОНТАКТИ</a>
-								<a href="tel:+380970265819">
+								<Link to="/contacts" className="footer__main-link">КОНТАКТИ</Link>
+								<a target="blank" href={`tel:${dataContacts.phone}`}>
 									<img src={phone} alt="#" />
-									098 34 888 18
+									{dataContacts && dataContacts.phoneVisible}
 								</a>
-								<a href="mailto:tyotyahalya@gmail.com">
+								<a target="blank" href={`mailto:${dataContacts.email}`}>
 									<img src={mail} alt="#" />
-									sprach-salon@gmail.com
+									{dataContacts && dataContacts.email}
 								</a>
-								<a href="#">
+								<a target="blank" href={dataContacts && dataContacts.address.link}>
 									<img src={adress} alt="#" />
 									місто Київ метро Житомирська
 								</a>
@@ -26,18 +29,15 @@ const Footer = () => {
 							<div className="footer__menu-courses">
 								<p className="footer__main-link">ФОРМИ НАВЧАННЯ</p>
 								<div className="menu-courses__main grid">
-									<a href="#">Дитячі заняття</a>
-									<a href="#">Online заняття</a>
-									<a href="#">індивідуальні уроки</a>
-									<a href="#">Інтенсивний курс</a>
-									<a href="#">Групові заняття</a>
-									<a href="#">Розмовний курс</a>
-									<a href="#">Підготовка до Zertifikat</a>
-									<a href="#">Підготовка до ЗНО</a>
+									{dataCourse && dataCourse.map(el => {
+										return (
+											<Link to={`/courses/${el.name}`}>{el.title}</Link>
+										)
+									})}
 								</div>
 							</div>
 							<div className="footer__menu-test">
-								<a className="footer__main-link" href="#">ONLINE TEST</a>
+								<Link className="footer__main-link" to="/test">ONLINE TEST</Link>
 							</div>
 						</div>
 					</div>
@@ -47,10 +47,10 @@ const Footer = () => {
 							<img src={logo} alt="logo" />
 						</div>
 						<div className="footer__hotlinks-social row">
-							<a href="#">
+							<a href="https://t.me/+380636818776" target="blank">
 								<img src={telegram} alt="telegram" />
 							</a>
-							<a href="#">
+							<a href="viber://contact?number=%2B380636818776" target="blank">
 								<img src={viber} alt="viber" />
 							</a>
 						</div>

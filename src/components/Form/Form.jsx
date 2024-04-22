@@ -41,12 +41,11 @@ const Form = ({ trueAnswers }) => {
 			} else {
 				setMessageAlert("Щось пішло не так, спробуйте пізніше...")
 			}
-
+			setFormData({
+				name: "",
+				phone: "",
+			});
 			setTimeout(() => {
-				setFormData({
-					name: "",
-					phone: "",
-				});
 				setMessageAlert("")
 			}, 3000)
 		});

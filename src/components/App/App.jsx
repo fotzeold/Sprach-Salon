@@ -9,7 +9,7 @@ import ContactsPage from "../ContactsPage/ContactsPage";
 import TestPage from "../TestPage/TestPage";
 import NotFound from "../NotFound/NotFound";
 import Footer from "../Footer/Footer"
-
+import ScrollToTop from "../../services/scrollToTop";
 
 function App() {
 	const [activeModal, setActiveModal] = useState(false);
@@ -27,6 +27,7 @@ function App() {
 
 	return (
 		<BrowserRouter>
+			<ScrollToTop />
 			<Header></Header>
 			<main>
 				<Routes>

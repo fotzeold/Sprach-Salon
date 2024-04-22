@@ -137,7 +137,7 @@ header{
 			}
 		nav{
 			background-color: #EBA801;
-			position: absolute;
+			position: fixed;
 			top: 0;
 			height: 100vh;
 			max-width: 320px;
@@ -155,10 +155,13 @@ header{
 			display: flex;
 		}
 		.dropdown{
-			height: 35px;
+			height: 25px;
 			i{
 				display: none;
 			}
+		}
+		.dropdown__content{
+			padding-top: 10px;
 		}
 
 		.dropdown:hover{

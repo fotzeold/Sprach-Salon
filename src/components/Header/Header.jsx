@@ -1,9 +1,11 @@
 import './header.scss';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { logo } from "../../services/image";
 import { Link } from "react-router-dom";
 import coursesData from "../../data/courses.json"
+import { disableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
+
 
 const Header = () => {
 
@@ -16,6 +18,14 @@ const Header = () => {
 	const setBurgerFalse = () => {
 		setActiveBurger(false);
 	}
+
+	useEffect(() => {
+		if (activeBurger) {
+			disableBodyScroll(document.body)
+		} else {
+			clearAllBodyScrollLocks(document.body)
+		}
+	}, [activeBurger])
 
 	return (
 		<header>

@@ -34,7 +34,7 @@ const Facts = () => {
 					</div>
 					<div className="facts__video">
 						<iframe
-							src="https://www.youtube.com/embed/whn6ETETu-Q?si=TKFiZlg5rVNai1N7"
+							src="https://www.youtube.com/embed/li-_BLtq58w?si=YLyEf85L6AdZByEo"
 							title="YouTube video player"
 							frameBorder="0"
 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
