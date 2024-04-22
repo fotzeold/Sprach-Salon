@@ -10,6 +10,8 @@ const Form = ({ trueAnswers }) => {
 		inp_phone: "",
 	});
 
+	const [messageAlert, setMessageAlert] = useState("")
+
 	const handleInputChange = (event) => {
 		const { id, value } = event.target;
 		setFormData((prevData) => ({
@@ -33,11 +35,20 @@ const Form = ({ trueAnswers }) => {
 			message = `${base}<b>Користувач пройшов тест і набрав ${trueAnswers} балів із 25 можливих</b>`
 		}
 
-		sendData(message);
+		sendData(message).then(data => {
+			if (data.status === 200) {
+				setMessageAlert("Заявку успішно відправлено!")
+			} else {
+				setMessageAlert("Щось пішло не так, спробуйте пізніше...")
+			}
 
-		setFormData({
-			name: "",
-			phone: "",
+			setTimeout(() => {
+				setFormData({
+					name: "",
+					phone: "",
+				});
+				setMessageAlert("")
+			}, 3000)
 		});
 	};
 
@@ -62,6 +73,7 @@ const Form = ({ trueAnswers }) => {
 					value={formData.inp_phone || ""}
 					onChange={handleInputChange}
 				/>
+				<p>{messageAlert}</p>
 				<div className="row">
 					<button type="submit">Відправити заявку</button>
 					<div className="form__social">

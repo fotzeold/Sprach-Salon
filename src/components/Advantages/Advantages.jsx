@@ -1,19 +1,10 @@
-import { useEffect, useState } from "react";
+import advantagesData from "../../data/advantages.json"
 
-import getData from "../../services/getData";
-import { _ADVS } from "../../services/apiKey";
 import { spinner } from "../../services/image";
 
 import "./advantages.scss";
 
 const Advantages = ({ openModal }) => {
-	const [advs, setAdvs] = useState(null);
-
-	useEffect(() => {
-		getData(_ADVS)
-			.then(data => setAdvs(data))
-	}, []);
-
 	return (
 		<section className="advantages">
 			<div className="container">
@@ -23,12 +14,12 @@ const Advantages = ({ openModal }) => {
 						<p>обрали Sprach Salon</p>
 					</div>
 					<div className="advantages__wrapper-content">
-						{advs ?
-							advs.map(({ _id, title, img, descr }, index) => {
+						{advantagesData ?
+							advantagesData.map(({ _id, title, img, descr }, index) => {
 								const reverse = index % 2 ? "reverse" : null;
 
 								return (
-									<div className={"advantages__item row " + reverse} key={_id}>
+									<div className={"advantages__item row " + reverse} key={_id + "-advantages-" + index}>
 										<div className="advantages__item-img">
 											<img src={img} alt={title} loading="lazy" />
 										</div>

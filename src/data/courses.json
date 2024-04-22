@@ -1,0 +1,58 @@
+[
+	{
+		"_id": {
+			"$oid": "654e01f3afea7f2a7159da89"
+		},
+		"name": "starter-course",
+		"title": "Заняття для початківців"
+	},
+	{
+		"_id": {
+			"$oid": "654e0206afea7f2a7159da8b"
+		},
+		"name": "individual-course",
+		"title": "Індивідуальні уроки"
+	},
+	{
+		"_id": {
+			"$oid": "654e020eafea7f2a7159da8d"
+		},
+		"name": "group-course",
+		"title": "Групові заняття"
+	},
+	{
+		"_id": {
+			"$oid": "654e0216afea7f2a7159da8f"
+		},
+		"name": "online-course",
+		"title": "Online заняття"
+	},
+	{
+		"_id": {
+			"$oid": "654e021cafea7f2a7159da91"
+		},
+		"name": "intensive-course",
+		"title": "Інтенсивний курс"
+	},
+	{
+		"_id": {
+			"$oid": "654e0227afea7f2a7159da93"
+		},
+		"name": "conversational-course",
+		"title": "Розмовний курс"
+	},
+	{
+		"_id": {
+			"$oid": "654e0230afea7f2a7159da95"
+		},
+		"name": "zecertificate-course",
+		"title": "Підготовка до ZERTIFIKAT"
+	},
+	{
+		"_id": {
+			"$oid": "654e0233afea7f2a7159da97"
+		},
+		"name": "zno-course",
+		"title": "Підготовка до ЗНО"
+	}
+]

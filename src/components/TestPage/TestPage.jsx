@@ -1,12 +1,10 @@
 import "./test-page.scss";
 import { Link, animateScroll as scroll } from 'react-scroll';
-import { useState, useEffect } from "react";
-import getData from "../../services/getData";
-import { _TEST } from "../../services/apiKey";
+import { useState } from "react";
+import testData from "../../data/test.json"
 
 const TestPage = ({ openModal, setTrueAnswers }) => {
 
-	const [test, setTest] = useState(null);
 	const [answers, setAnswers] = useState([]);
 
 	const getAnswers = (element, quest) => {
@@ -25,7 +23,7 @@ const TestPage = ({ openModal, setTrueAnswers }) => {
 	const handleSend = () => {
 		let currEl;
 		let counter = 0;
-		test.forEach(element => {
+		testData && testData.forEach(element => {
 			currEl = answers.find(el => el.quest === element.qstId)
 
 			if (currEl && element.trueIndexChoice === currEl.answer) {
@@ -36,12 +34,6 @@ const TestPage = ({ openModal, setTrueAnswers }) => {
 		setTrueAnswers(counter);
 		openModal();
 	};
-
-
-	useEffect(() => {
-		getData(_TEST).then(data => setTest(data))
-	}, []);
-
 
 	return (
 		<section className="test">
@@ -54,9 +46,9 @@ const TestPage = ({ openModal, setTrueAnswers }) => {
 			<div className="container">
 				<div className="test__questions" id="section-qst">
 					{
-						test ? test.map((element, index) => {
+						testData ? testData.map((element, index) => {
 							return (
-								<div key={element._id} className="test__questions-field">
+								<div key={element._id + "-test-" + index} className="test__questions-field">
 									<div className="test__questions-title">
 										<p>{`${index + 1}. ${element.question}`}</p>
 									</div>

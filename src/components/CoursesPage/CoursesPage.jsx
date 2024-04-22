@@ -19,3 +19,4 @@ const CoursesPage = (props) => {
 }
 
 export default CoursesPage;
+

@@ -3,6 +3,9 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import "./courses-carousel.scss";
 
+import coursesData from "../../data/courses.json"
+import { Link } from 'react-router-dom';
+
 const CoursesCarousel = () => {
 
 	const settings = {
@@ -39,41 +42,15 @@ const CoursesCarousel = () => {
 					<div className="courses-carousel__main">
 						<div className="carousel__track">
 							<Slider {...settings}>
-								<div className="carousel__card">
-									<h3>Індивідуальні уроки</h3>
-									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum omnis similique pariatur ut officiis dolorem?</p>
-									<a href='#'>Детальніше</a>
-								</div>
-								<div className="carousel__card">
-									<h3>Індивідуальні уроки</h3>
-									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum omnis similique pariatur ut officiis dolorem?</p>
-									<a href='#'>Детальніше</a>
-								</div>
-								<div className="carousel__card">
-									<h3>Індивідуальні уроки</h3>
-									<p>Lorem ipsum dolor Illum omnis similique pariatur ut officiis dolorem?</p>
-									<a href='#'>Детальніше</a>
-								</div>
-								<div className="carousel__card">
-									<h3>Індивідуальні уроки</h3>
-									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum omnis similique pariatur ut officiis dolorem?</p>
-									<a href='#'>Детальніше</a>
-								</div>
-								<div className="carousel__card">
-									<h3>Індивідуальні уроки</h3>
-									<p> Illum omnis similique pariatur ut officiis dolorem?</p>
-									<a href='#'>Детальніше</a>
-								</div>
-								<div className="carousel__card">
-									<h3>Індивідуальні уроки</h3>
-									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum omnis similique pariatur ut officiis dolorem?</p>
-									<a href='#'>Детальніше</a>
-								</div>
-								<div className="carousel__card">
-									<h3>Індивідуальні уроки</h3>
-									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum omnis similique pariatur ut officiis dolorem?</p>
-									<a href='#'>Детальніше</a>
-								</div>
+								{coursesData && coursesData.map((el, i) => {
+									return (
+										<div className="carousel__card" key={el.name + "-carousel__card-" + i}>
+											<h3>{el.title}</h3>
+											<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum omnis similique pariatur ut officiis dolorem?</p>
+											<Link to={`/courses/${el.name}`}>Детальніше</Link>
+										</div>
+									)
+								})}
 							</Slider>
 						</div>
 					</div>

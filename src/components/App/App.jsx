@@ -1,7 +1,5 @@
 import { Route, Routes, BrowserRouter } from "react-router-dom";
 import { useState, useEffect } from "react";
-import getData from "../../services/getData";
-import { _COURSES } from "../../services/apiKey";
 
 import Modal from '../Modal/Modal';
 import Header from "../Header/Header";
@@ -26,10 +24,6 @@ function App() {
 		document.body.classList.remove("body-when-open-modal");
 		setActiveModal(false);
 	}
-
-	useEffect(() => {
-		getData(_COURSES).then(data => setCourseList(data))
-	}, [])
 
 
 	return (

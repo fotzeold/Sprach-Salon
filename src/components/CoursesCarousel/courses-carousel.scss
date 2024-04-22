@@ -38,9 +38,17 @@
 			padding: 20px;
 			justify-content: space-between;
 			flex-direction: column;
+			h3{
+				height: 52px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+			}
 			a{
 				display: block;
 				width: 100%;
+				margin-top: 10px;
 				border:1px solid #EBA801;
 				text-align: center;
 				padding: 10px 0;

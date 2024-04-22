@@ -1,0 +1,352 @@
+[
+	{
+		"_id": {
+			"$oid": "65522b3640b7e444fa50afd5"
+		},
+		"question": "Was bedeutet \"Hallo\" auf Deutsch?",
+		"choices": {
+			"a": "Ja",
+			"b": "Nein",
+			"c": "Guten Tag",
+			"d": "Tschüss"
+		},
+		"trueIndexChoice": "c",
+		"qstId": "qst-1"
+	},
+	{
+		"_id": {
+			"$oid": "65522b3640b7e444fa50afd6"
+		},
+		"question": "Wie sagt man \"Danke\" auf Deutsch?",
+		"choices": {
+			"a": "Brot",
+			"b": "Bitte",
+			"c": "Wasser",
+			"d": "Rot"
+		},
+		"trueIndexChoice": "b",
+		"qstId": "qst-2"
+	},
+	{
+		"_id": {
+			"$oid": "65522b3640b7e444fa50afd7"
+		},
+		"question": "Welches Tier macht \"Miau\"?",
+		"choices": {
+			"a": "Hund",
+			"b": "Kuh",
+			"c": "Katze",
+			"d": "Pferd"
+		},
+		"trueIndexChoice": "c",
+		"qstId": "qst-3"
+	},
+	{
+		"_id": {
+			"$oid": "65522b3640b7e444fa50afd8"
+		},
+		"question": "Welche Farbe hat die Sonne?",
+		"choices": {
+			"a": "Blau",
+			"b": "Grün",
+			"c": "Gelb",
+			"d": "Rot"
+		},
+		"trueIndexChoice": "c",
+		"qstId": "qst-4"
+	},
+	{
+		"_id": {
+			"$oid": "65522b3640b7e444fa50afd9"
+		},
+		"question": "Wie viele Finger hat eine Hand?",
+		"choices": {
+			"a": "5",
+			"b": "10",
+			"c": "2",
+			"d": "8"
+		},
+		"trueIndexChoice": "a",
+		"qstId": "qst-5"
+	},
+	{
+		"_id": {
+			"$oid": "65522b3640b7e444fa50afda"
+		},
+		"question": "Wie sagt man \"Guten Morgen\" auf Deutsch?",
+		"choices": {
+			"a": "Hello",
+			"b": "Goodbye",
+			"c": "Thank you",
+			"d": "Good morning"
+		},
+		"trueIndexChoice": "d",
+		"qstId": "qst-6"
+	},
+	{
+		"_id": {
+			"$oid": "65522b3640b7e444fa50afdb"
+		},
+		"question": "Was bedeutet \"Hund\" auf Deutsch?",
+		"choices": {
+			"a": "Собака",
+			"b": "Кіт",
+			"c": "Миша",
+			"d": "Птах"
+		},
+		"trueIndexChoice": "a",
+		"qstId": "qst-7"
+	},
+	{
+		"_id": {
+			"$oid": "65522b3640b7e444fa50afdc"
+		},
+		"question": "Wie fragt man höflich nach dem Namen einer Person?",
+		"choices": {
+			"a": "Wie spät ist es?",
+			"b": "Wie viel Uhr ist es?",
+			"c": "Wie heißt du?",
+			"d": "Wie geht es dir?"
+		},
+		"trueIndexChoice": "c",
+		"qstId": "qst-8"
+	},
+	{
+		"_id": {
+			"$oid": "65522b3640b7e444fa50afdd"
+		},
+		"question": "Welches Tier lebt im Wasser und kann nicht fliegen?",
+		"choices": {
+			"a": "Vogel",
+			"b": "Hund",
+			"c": "Fisch",
+			"d": "Pferd"
+		},
+		"trueIndexChoice": "c",
+		"qstId": "qst-9"
+	},
+	{
+		"_id": {
+			"$oid": "65522b3640b7e444fa50afde"
+		},
+		"question": "Wie nennt man die Zeit zwischen Mitternacht und Mittag?",
+		"choices": {
+			"a": "Evening",
+			"b": "Morning",
+			"c": "Afternoon",
+			"d": "Night"
+		},
+		"trueIndexChoice": "b",
+		"qstId": "qst-10"
+	},
+	{
+		"_id": {
+			"$oid": "65522b3640b7e444fa50afdf"
+		},
+		"question": "Was macht man normalerweise in einem Restaurant?",
+		"choices": {
+			"a": "Man spielt Fußball.",
+			"b": "Man isst und trinkt.",
+			"c": "Man liest ein Buch.",
+			"d": "Man schläft."
+		},
+		"trueIndexChoice": "b",
+		"qstId": "qst-11"
+	},
+	{
+		"_id": {
+			"$oid": "65522b3640b7e444fa50afe0"
+		},
+		"question": "Wie nennt man die Mutter von deinem Vater?",
+		"choices": {
+			"a": "Oma",
+			"b": "Tante",
+			"c": "Großmutter",
+			"d": "Schwester"
+		},
+		"trueIndexChoice": "a",
+		"qstId": "qst-12"
+	},
+	{
+		"_id": {
+			"$oid": "65522b3640b7e444fa50afe1"
+		},
+		"question": "Welches Transportmittel benutzt man für lange Reisen über das Meer?",
+		"choices": {
+			"a": "Fahrrad",
+			"b": "Auto",
+			"c": "Flugzeug",
+			"d": "Schiff"
+		},
+		"trueIndexChoice": "d",
+		"qstId": "qst-13"
+	},
+	{
+		"_id": {
+			"$oid": "65522b3640b7e444fa50afe2"
+		},
+		"question": "Wann feiert man Silvester?",
+		"choices": {
+			"a": "Am 1. Januar",
+			"b": "Am 24. Dezember",
+			"c": "Am 31. Dezember",
+			"d": "Am 1. März"
+		},
+		"trueIndexChoice": "c",
+		"qstId": "qst-14"
+	},
+	{
+		"_id": {
+			"$oid": "65522b3640b7e444fa50afe3"
+		},
+		"question": "Welche Jahreszeit kommt nach dem Herbst?",
+		"choices": {
+			"a": "Frühling",
+			"b": "Winter",
+			"c": "Sommer",
+			"d": "Frühling"
+		},
+		"trueIndexChoice": "b",
+		"qstId": "qst-15"
+	},
+	{
+		"_id": {
+			"$oid": "65522b3640b7e444fa50afe4"
+		},
+		"question": "Was ist der Plural von \"Auto\"?",
+		"choices": {
+			"a": "Autos",
+			"b": "Autoes",
+			"c": "Auto's",
+			"d": "Autoss"
+		},
+		"trueIndexChoice": "a",
+		"qstId": "qst-16"
+	},
+	{
+		"_id": {
+			"$oid": "65522b3640b7e444fa50afe5"
+		},
+		"question": "Wie sagt man \"Ich habe gestern ein Buch gelesen\" im Perfekt?",
+		"choices": {
+			"a": "Ich las ein Buch gestern.",
+			"b": "Ich lese ein Buch gestern.",
+			"c": "Ich habe ein Buch gelesen gestern.",
+			"d": "Ich habe gestern ein Buch gelesen."
+		},
+		"trueIndexChoice": "d",
+		"qstId": "qst-17"
+	},
+	{
+		"_id": {
+			"$oid": "65522b3640b7e444fa50afe6"
+		},
+		"question": "Welches Verb passt in den Satz: \"Am Wochenende ____ wir oft ins Kino\"?",
+		"choices": {
+			"a": "gehen",
+			"b": "gingen",
+			"c": "ging",
+			"d": "geht"
+		},
+		"trueIndexChoice": "a",
+		"qstId": "qst-18"
+	},
+	{
+		"_id": {
+			"$oid": "65522b3640b7e444fa50afe7"
+		},
+		"question": "Welche Präposition gehört normalerweise zu \"interessiert\"?",
+		"choices": {
+			"a": "an",
+			"b": "für",
+			"c": "mit",
+			"d": "über"
+		},
+		"trueIndexChoice": "a",
+		"qstId": "qst-19"
+	},
+	{
+		"_id": {
+			"$oid": "65522b3640b7e444fa50afe8"
+		},
+		"question": "Wie sagt man \"Ich bin krank und kann nicht zur Arbeit kommen\" auf Deutsch?",
+		"choices": {
+			"a": "Ich bin im Urlaub.",
+			"b": "Ich habe eine wichtige Besprechung.",
+			"c": "Ich bin krank und kann nicht zur Arbeit kommen.",
+			"d": "Ich arbeite von zu Hause aus."
+		},
+		"trueIndexChoice": "c",
+		"qstId": "qst-20"
+	},
+	{
+		"_id": {
+			"$oid": "65522b3640b7e444fa50afe9"
+		},
+		"question": "Was ist der Konjunktiv II von \"haben\"?",
+		"choices": {
+			"a": "ich hat",
+			"b": "du hattest",
+			"c": "er/sie hat",
+			"d": "wir haben"
+		},
+		"trueIndexChoice": "b",
+		"qstId": "qst-21"
+	},
+	{
+		"_id": {
+			"$oid": "65522b3640b7e444fa50afea"
+		},
+		"question": "Welche Präposition passt in den Satz: \"Ich interessiere mich ____ Kunst\"?",
+		"choices": {
+			"a": "für",
+			"b": "mit",
+			"c": "über",
+			"d": "in"
+		},
+		"trueIndexChoice": "a",
+		"qstId": "qst-22"
+	},
+	{
+		"_id": {
+			"$oid": "65522b3640b7e444fa50afeb"
+		},
+		"question": "Welches Wort ist ein Synonym für \"erklären\"?",
+		"choices": {
+			"a": "verbergen",
+			"b": "verdeutlichen",
+			"c": "verschwenden",
+			"d": "vertrauen"
+		},
+		"trueIndexChoice": "b",
+		"qstId": "qst-23"
+	},
+	{
+		"_id": {
+			"$oid": "65522b3640b7e444fa50afec"
+		},
+		"question": "Wie sagt man \"Ich habe keine Lust, heute zu arbeiten\" auf Deutsch?",
+		"choices": {
+			"a": "Ich habe heute keine Arbeit.",
+			"b": "Ich arbeite heute gerne.",
+			"c": "Ich möchte heute arbeiten.",
+			"d": "Ich habe heute keine Lust zu arbeiten."
+		},
+		"trueIndexChoice": "c",
+		"qstId": "qst-24"
+	},
+	{
+		"_id": {
+			"$oid": "65522b3640b7e444fa50afed"
+		},
+		"question": "Welche Zeitform wird verwendet, um über eine abgeschlossene Handlung in der Vergangenheit zu sprechen?",
+		"choices": {
+			"a": "Präsens",
+			"b": "Präteritum",
+			"c": "Perfekt",
+			"d": "Futur"
+		},
+		"trueIndexChoice": "b",
+		"qstId": "qst-25"
+	}
+]
